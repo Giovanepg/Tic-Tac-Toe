@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado do Jogo</title>
+  <link rel="stylesheet" href="/static/css/feedback.css">
+</head>
+<body>
+ <main>
+  <div id="result">
+    
+    <div id="resultMessage"></div>
+    <a href="index.html">Voltar para o Jogo</a>
+  </div>
+ </main>
+  
+  <script type="module">
+    const params = new URLSearchParams(window.location.search);
+    const winner = params.get('winner');
+    const resultMessage = document.getElementById('resultMessage');
+
+    if (winner === 'X') {
+      resultMessage.textContent = 'Jogador "X" Ganhou!';
+    } else if (winner === 'O') {
+      resultMessage.textContent = 'Jogador "O" Ganhou!';
+    } else {
+      resultMessage.textContent = 'Deu Velha!';
+    }
+  </script>
+</body>
+</html>

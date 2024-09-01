@@ -1,0 +1,130 @@
+body {
+    background-image: url(/static/img/Feddback.gif);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position-y: 20vh;
+    background-position-x: 50%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    
+  }
+
+  #result {
+    text-align: center;
+    animation: pulse 1s infinite alternate;
+    
+  }
+
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  #resultMessage {
+    font-size: 4em;
+    margin-top: 20px;
+    color: #0a0a0a;
+  }
+
+  a {
+    display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff; 
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    background-color: #0aeded;
+  }
+  main {
+    opacity: 0.7;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+/*
+body{
+    background-image: url(/static/img/Feddback.gif);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position-y: 20vh;
+    background-position-x: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    
+}
+
+h1 {
+    animation: grow 3s infinite;
+}
+
+@keyframes grow {
+    from {
+        font-size: 100px;
+        opacity: 1;
+    }
+    to {
+        font-size: 50px;
+        opacity: 2;
+    }
+}
+
+
+h1 {
+    transition: 1s all;
+    font-size: 3rem;
+}
+
+main {
+    opacity: 0.5;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a{
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+    */
